@@ -5,16 +5,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Mac OS Big Sur使用体验 - lz2019hjh Blog</title>
+    <title>ubuntu-linux-使用 - lz2019hjh Blog</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="TriDiamond Obsidian,"> 
-    <meta name="description" content="明天要做更好的自己,终于！
-从第一眼看到官网的宣传和宣传片后，就马上想入手一下，可是一直没有机会，然后查看我的邮箱后发现一篇邮件
+    <meta name="description" content="明天要做更好的自己,前言
+ubuntu虽然是最有好的linux之一，但还是有有一些设置需要改
 
-
-"> 
+换源默认的源速度感人
+终端输入
+$ sudo cp /etc/apt/sources.list /etc/apt/sour,"> 
     <meta name="author" content="lz2019hjh"> 
     <link rel="alternative" href="atom.xml" title="lz2019hjh Blog" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.ico"> 
@@ -61,7 +62,7 @@
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="/img/favicon.ico" alt="" data-url="https://lz2019hjh.github.io">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">Mac OS Big Sur使用体验</h3>
+        <h3 class="subtitle">ubuntu-linux-使用</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -90,22 +91,22 @@
                 
                 <a href="javascript:;"><b>「 </b>Article<b> 」</b></a>
                 
-                八月 08, 2020
+                八月 30, 2020
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/2020/08/08/2020-08-17-Mac-OS-Big-Sur-%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/" title="Mac OS Big Sur使用体验" class="">Mac OS Big Sur使用体验</a>
+            <h3 class="post-title animated fadeInDown"><a href="/2020/08/30/ubuntu-linux-%E4%BD%BF%E7%94%A8/" title="ubuntu-linux-使用" class="">ubuntu-linux-使用</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>Words count</i>
-                    247
+                    5.2k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
-                    1 mins.
+                    5 mins.
                 </span>
                 
                 
@@ -118,7 +119,7 @@
             </p>
             
             
-            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Apple-Bate/" rel="tag">Apple Bate</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Mac/" rel="tag">Mac</a></li></ul>
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/linux-ubuntu/" rel="tag">-linux -ubuntu</a></li></ul>
             
         </div>
     </div>
@@ -139,10 +140,74 @@
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <h1 id="终于！"><a href="#终于！" class="headerlink" title="终于！"></a>终于！</h1><blockquote>
-<p>从第一眼看到官网的宣传和宣传片后，就马上想入手一下，可是一直没有机会，然后查看我的邮箱后发现一篇邮件</p>
+            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
+<p><code>ubuntu</code>虽然是最有好的<code>linux</code>之一，但还是有有一些设置需要改</p>
 </blockquote>
-<p><img src="https://github.com/lz2019hjh/lz2019hjh.github.io/picture/8-27-email.png"></p>
+<h3 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h3><p>默认的源速度感人</p>
+<p>终端输入</p>
+<pre><code class="bash">$ sudo cp /etc/apt/sources.list /etc/apt/sources.list.asd # 备份官方源
+$ sudo rm /etc/apt/sources.list # 删除官方源
+$ sudo apt-get install vim # 安装vim
+$ sudo vim /etc/apt/sources.list # 创建并编辑软件源文件
+$ # 输入`i`,然后将对应版本的软件源配置(见下)复制进去,然后按 `esc` 输入`:wq`
+$ sudo apt update # 刷新软件源
+$ sudo apt upgrade # 更新</code></pre>
+<h3 id="安装日常使用软件"><a href="#安装日常使用软件" class="headerlink" title="安装日常使用软件"></a>安装日常使用软件</h3><pre><code class="bash">$ sudo apt-get install wget curl gcc git python make openssh-server# 日常工具
+$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb # 下载google浏览器
+$ sudo dpkg -i google-chrome-stable_current_amd64.deb # 安装google浏览器
+$ wget https://vscode.cdn.azure.cn/stable/a0479759d6e9ea56afa657e454193f72aef85bd0/code_1.48.2-1598353430_amd64.deb # 下载vscode
+$ sudo dpkg -i code_1.48.2-1598353430_amd64.deb # 安装vscode
+$ sudo apt-get install http://d1.music.126.net/dmusic/netease-cloud-music_1.2.1_amd64_ubuntu_20190428.deb # 安装网易云音乐
+$ sudo dpkg -i netease-cloud-music_1.2.1_amd64_ubuntu_20190428.deb
+$ wget https://wdl1.cache.wps.cn/wps/download/ep/Linux2019/9615/wps-office_11.1.0.9615_amd64.deb # 下载WPS office
+$ sudo dpkg -i wps-office_11.1.0.9615_amd64.deb # 安装WPS office</code></pre>
+<h3 id="etc-apt-sources-list"><a href="#etc-apt-sources-list" class="headerlink" title="/etc/apt/sources.list"></a>/etc/apt/sources.list</h3><blockquote>
+<p>使用清华源</p>
+</blockquote>
+<ul>
+<li>ubuntu 14.04</li>
+</ul>
+<pre><code class="bash">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty-updates main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty-backports main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty-security main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ trusty-security main restricted universe multiverse</code></pre>
+<ul>
+<li>ubuntu 16.04</li>
+</ul>
+<pre><code class="bash">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse</code></pre>
+<ul>
+<li>ubuntu 18.04</li>
+</ul>
+<pre><code class="bash">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse</code></pre>
+<ul>
+<li>ubuntu 20.04</li>
+</ul>
+<pre><code class="bash">deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse</code></pre>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
@@ -201,7 +266,7 @@
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>Contents</h4>
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%88%E4%BA%8E%EF%BC%81"><span class="toc-number">1.</span> <span class="toc-text">终于！</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8D%A2%E6%BA%90"><span class="toc-number">1.0.1.</span> <span class="toc-text">换源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E8%BD%AF%E4%BB%B6"><span class="toc-number">1.0.2.</span> <span class="toc-text">安装日常使用软件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#etc-apt-sources-list"><span class="toc-number">1.0.3.</span> <span class="toc-text">&#x2F;etc&#x2F;apt&#x2F;sources.list</span></a></li></ol></li></ol></li></ol>
                 </div>
             </div>
             
