@@ -38,7 +38,7 @@ pre code .language-mark {
   color: var(--secondary);
   z-index: 5;
   text-transform: uppercase;
-  font-family: Rubik, Lato, lucida grande, lucida sans unicode, Tahoma, 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif;
+  font-family: Menlo;
   font-size: 0.6rem;
   background: rgba(16,14,23,0.36);
   border-radius: 8px;
@@ -91,7 +91,7 @@ pre code .language-mark b {
 }
 .CodeMirror .CodeMirror-lines {
   font-size: 0.8rem;
-  font-family: Menlo, Monaco, 'Courier New', monospace;
+  font-family: Menlo;
 }
 /* Responsive style */
 body {
