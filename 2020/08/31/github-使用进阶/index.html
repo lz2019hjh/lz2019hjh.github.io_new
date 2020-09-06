@@ -5,15 +5,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>c++入门之环境配置 - lz2019hjh Blog</title>
+    <title>github 使用进阶 - lz2019hjh Blog</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="TriDiamond Obsidian,"> 
     <meta name="description" content="明天要做更好的自己,前言
-在使用vscode的时候你可能会遇到没有g++环境的问题,这时候你就需要配置环境
+github作为一个标准的国外网站；总是会被各种“墙”和“封”有一种办法可以比较稳定的使用github;在一定程度上还能提速一点
 
-关于c++编译环境配置windows部分首先你得有一个mingw库,如果你有了Dev-c++,因该就有了,打,"> 
+Start使用https://www.ipaddress.c,"> 
     <meta name="author" content="lz2019hjh"> 
     <link rel="alternative" href="atom.xml" title="lz2019hjh Blog" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.ico"> 
@@ -60,7 +60,7 @@
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="/img/favicon.ico" alt="" data-url="https://lz2019hjh.github.io">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">c++入门之环境配置</h3>
+        <h3 class="subtitle">github 使用进阶</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -89,22 +89,22 @@
                 
                 <a href="javascript:;"><b>「 </b>Article<b> 」</b></a>
                 
-                三月 11, 2020
+                八月 31, 2020
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/2020/03/11/2020-03-11-c++%E4%B9%8B%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="c++入门之环境配置" class="">c++入门之环境配置</a>
+            <h3 class="post-title animated fadeInDown"><a href="/2020/08/31/github-%E4%BD%BF%E7%94%A8%E8%BF%9B%E9%98%B6/" title="github 使用进阶" class="">github 使用进阶</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>Words count</i>
-                    7.4k
+                    2.3k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
-                    7 mins.
+                    2 mins.
                 </span>
                 
                 
@@ -117,7 +117,7 @@
             </p>
             
             
-            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/c/" rel="tag">c++</a></li></ul>
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/github/" rel="tag">-github</a></li></ul>
             
         </div>
     </div>
@@ -139,211 +139,61 @@
     <div class='main'>
         <div class="content markdown animated fadeIn">
             <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>在使用<code>vscode</code>的时候你可能会遇到没有<code>g++</code>环境的问题,这时候你就需要配置环境</p>
+<p>github作为一个标准的国外网站；总是会被各种“墙”和“封”<br>有一种办法可以比较稳定的使用github;在一定程度上还能提速一点</p>
 </blockquote>
-<h1 id="关于c-编译环境配置"><a href="#关于c-编译环境配置" class="headerlink" title="关于c++编译环境配置"></a>关于c++编译环境配置</h1><h3 id="windows部分"><a href="#windows部分" class="headerlink" title="windows部分"></a>windows部分</h3><p>首先你得有一个<code>mingw</code>库,如果你有了<code>Dev-c++</code>,因该就有了,打开<code>Dev-c++</code>软件所在的安装目录</p>
-<p>下面以<code>windows 10</code>为例,<code>windows 7</code>好像差不多？</p>
-<p>默认安装在<code>C:\Program File (x86)\Dev-Cpp</code>,你可进入这个文件夹</p>
-<p>你会看到</p>
-<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gcqbdl3bwoj31c00u0aye.jpg" alt="1"></p>
-<p>打开那个选中的目录</p>
-<p>你又会看到</p>
-<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gcqbfkiq2mj31c00u0arf.jpg" alt="2"></p>
-<p>点击进入<code>bin</code>,你会看到以下东西</p>
-<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gcqbjdkoa8j31c00u07wh.jpg" alt="3"></p>
-<p>有一个叫做<code>g++</code>的东西,这就是我们要的编辑器</p>
-<p>复制当前的文件夹的目录</p>
-<p>默认是<code>C:\Program File (x86)\Dev-Cpp\MinGW64\bin</code></p>
-<p>然后你就可以关闭这个东西了</p>
-<p>打开控制面板</p>
-<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gcqboi2fwsj31c00u0e19.jpg" alt="4"></p>
-<p>在右上角的<code>搜索控制面板</code>里搜索<code>PATH</code></p>
-<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gcqbqc0l01j31c00u049m.jpg" alt="5"></p>
-<p>点开<code>编辑系统环境变量</code></p>
-<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gcqbtq11ynj31c00u0nfo.jpg" alt="6"></p>
-<p>点击右下角的<code>环境变量(N)...</code></p>
-<p>在上面那个<code>XXX的用户变量(U)</code></p>
-<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gcqbwffgatj31c00u01kx.jpg" alt="7"></p>
-<p>看看左边这一栏变量里有没有<code>Path</code></p>
-<p>没有新建一个,点击<code>新建(N)...</code>,注意是上面那个!!!</p>
-<p>然后在变量名里写<code>Path</code></p>
-<p>变量值里写刚刚复制的文件目录<code>C:\Program File (x86)\Dev-Cpp\MinGW64\bin</code></p>
-<p>然后点击<code>确认</code></p>
-<p>如果有,双击点开<code>Path</code>,会看到</p>
-<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gcqc2g01z7j31c00u04lw.jpg" alt="8"></p>
-<p>点击最上面的<code>新建(N)</code></p>
-<p>在跳出的文本框里输入刚刚复制的文件目录<code>C:\Program File (x86)\Dev-Cpp\MinGW64\bin</code></p>
-<p>写好后点击确定,关闭窗口后点再次点击确认,然后点击<code>应用(A)...</code></p>
-<p>然后<code>g++</code>环境就有了,之类也有了.</p>
-<p>打开<code>cmd</code>或<code>powershell</code></p>
-<p>输入<code>g++</code></p>
-<p>如果出现</p>
-<pre><code>g++: fatal error: no input files
-compilation terminated.</code></pre>
-<p>就说明有了</p>
-<p>然后<code>g++</code>指令如下</p>
-<table>
-<thead>
-<tr>
-<th align="center">指令</th>
-<th align="center">作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>g++ asd.cpp -o asd</code></td>
-<td align="center">将源程序编译成<code>asd.cpp</code>编译成<code>asd</code></td>
-</tr>
-<tr>
-<td align="center"><code>g++ asd.cpp -o asd -std=c++11</code></td>
-<td align="center">用<code>c++11</code>编译</td>
-</tr>
-<tr>
-<td align="center"><code>g++ asd.cpp -o asd -o2 -lm</code></td>
-<td align="center">打开<code>o2</code>和<code>lm</code>优化</td>
-</tr>
-<tr>
-<td align="center">…</td>
-<td align="center">…</td>
-</tr>
-</tbody></table>
-<p>指令只可以重叠，比如说你可以<code>g++ asd.cpp -o asd -o -lm -std=c++11</code></p>
-<p>表示将<code>asd.cpp</code>打开<code>o2</code>,<code>lm</code>,用<code>c++11</code>编译成<code>asd</code></p>
-<p>结合上面猜一猜作用</p>
-<p>windows部分结束</p>
-<h3 id="mac部分"><a href="#mac部分" class="headerlink" title="mac部分"></a>mac部分</h3><p>如果你有了<code>xcode</code>你就有了一个叫做<code>clang</code>或<code>clang++</code>的编译器,他会伪装成<code>g++</code>,<code>gcc</code></p>
-<p>当你在<code>终端</code>里输入<code>g++</code>时</p>
-<pre><code>clang: error: no input files</code></pre>
-<p>出现以上说明你有<code>g++</code>了</p>
-<pre><code>zsh: command not found: g++</code></pre>
-<p>说明没有</p>
-<p>在命令行里输入</p>
-<pre><code>xcode-select --install</code></pre>
-<p>会跳出一个窗口</p>
-<p>点击安装</p>
-<p>你也就拥有<code>g++</code>了,不过可能没有<code>#include&lt;bits/stdc++.h&gt;</code>需要手动配置</p>
-<p>打开<code>/Library/Developer/CommandLineTools/usr/include/c++/v1</code>这个目录</p>
-<p>创建文件夹<code>bits</code></p>
-<p>进入<code>bits</code>，并在其中创建文件<code>stdc++.h</code></p>
-<p>在里面写入</p>
-<pre><code>// C++ includes used for precompiling -*- C++ -*-
-
-// Copyright (C) 2003-2014 Free Software Foundation, Inc.
-//
-// This file is part of the GNU ISO C++ Library.  This library is free
-// software; you can redistribute it and/or modify it under the
-// terms of the GNU General Public License as published by the
-// Free Software Foundation; either version 3, or (at your option)
-// any later version.
-
-// This library is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-
-// Under Section 7 of GPL version 3, you are granted additional
-// permissions described in the GCC Runtime Library Exception, version
-// 3.1, as published by the Free Software Foundation.
-
-// You should have received a copy of the GNU General Public License and
-// a copy of the GCC Runtime Library Exception along with this program;
-// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
-// &lt;http://www.gnu.org/licenses/&gt;.
-
-/** @file stdc++.h
-*  This is an implementation file for a precompiled header.
-*/
-
-// 17.4.1.2 Headers
-
-// C
-#ifndef _GLIBCXX_NO_ASSERT
-#include &lt;cassert&gt;
-#endif
-#include &lt;cctype&gt;
-#include &lt;cerrno&gt;
-#include &lt;cfloat&gt;
-#include &lt;ciso646&gt;
-#include &lt;climits&gt;
-#include &lt;clocale&gt;
-#include &lt;cmath&gt;
-#include &lt;csetjmp&gt;
-#include &lt;csignal&gt;
-#include &lt;cstdarg&gt;
-#include &lt;cstddef&gt;
-#include &lt;cstdio&gt;
-#include &lt;cstdlib&gt;
-#include &lt;cstring&gt;
-#include &lt;ctime&gt;
-
-#if __cplusplus &gt;= 201103L
-#include &lt;ccomplex&gt;
-#include &lt;cfenv&gt;
-#include &lt;cinttypes&gt;
-#include &lt;cstdbool&gt;
-#include &lt;cstdint&gt;
-#include &lt;ctgmath&gt;
-#include &lt;cwchar&gt;
-#include &lt;cwctype&gt;
-#endif
-
-// C++
-#include &lt;algorithm&gt;
-#include &lt;bitset&gt;
-#include &lt;complex&gt;
-#include &lt;deque&gt;
-#include &lt;exception&gt;
-#include &lt;fstream&gt;
-#include &lt;functional&gt;
-#include &lt;iomanip&gt;
-#include &lt;ios&gt;
-#include &lt;iosfwd&gt;
-#include &lt;iostream&gt;
-#include &lt;istream&gt;
-#include &lt;iterator&gt;
-#include &lt;limits&gt;
-#include &lt;list&gt;
-#include &lt;locale&gt;
-#include &lt;map&gt;
-#include &lt;memory&gt;
-#include &lt;new&gt;
-#include &lt;numeric&gt;
-#include &lt;ostream&gt;
-#include &lt;queue&gt;
-#include &lt;set&gt;
-#include &lt;sstream&gt;
-#include &lt;stack&gt;
-#include &lt;stdexcept&gt;
-#include &lt;streambuf&gt;
-#include &lt;string&gt;
-#include &lt;typeinfo&gt;
-#include &lt;utility&gt;
-#include &lt;valarray&gt;
-#include &lt;vector&gt;
-
-#if __cplusplus &gt;= 201103L
-#include &lt;array&gt;
-#include &lt;atomic&gt;
-#include &lt;chrono&gt;
-#include &lt;condition_variable&gt;
-#include &lt;forward_list&gt;
-#include &lt;future&gt;
-#include &lt;initializer_list&gt;
-#include &lt;mutex&gt;
-#include &lt;random&gt;
-#include &lt;ratio&gt;
-#include &lt;regex&gt;
-#include &lt;scoped_allocator&gt;
-#include &lt;system_error&gt;
-#include &lt;thread&gt;
-#include &lt;tuple&gt;
-#include &lt;typeindex&gt;
-#include &lt;type_traits&gt;
-#include &lt;unordered_map&gt;
-#include &lt;unordered_set&gt;
-#endif</code></pre>
-<h3 id="linux部分"><a href="#linux部分" class="headerlink" title="linux部分"></a>linux部分</h3><p><code>debian</code>系的,在终端里输入</p>
-<pre><code>sudo apt-get install g++</code></pre>
-<p>完成</p>
+<h3 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h3><p>使用<a target="_blank" rel="noopener" href="https://www.ipaddress.com/">https://www.ipaddress.com/</a>查询以下网址的真是IP地址</p>
+<pre><code>gist.github.com
+github.com
+www.github.com
+api.github.com
+avatars0.githubusercontent.com
+avatars1.githubusercontent.com
+avatars2.githubusercontent.com
+avatars3.githubusercontent.com
+avatars4.githubusercontent.com
+avatars5.githubusercontent.com
+avatars6.githubusercontent.com
+avatars7.githubusercontent.com
+avatars8.githubusercontent.com
+camo.githubusercontent.com
+cloud.githubusercontent.com
+gist.githubusercontent.com
+marketplace-screenshots.githubusercontent.com
+raw.githubusercontent.com
+repository-images.githubusercontent.com
+user-images.githubusercontent.com</code></pre>
+<p>然后将其改为</p>
+<pre><code>IP + 域名的格式</code></pre>
+<p>以下是我查出来的结果</p>
+<pre><code>140.82.112.4 gist.github.com
+140.82.114.4 github.com
+140.82.112.4 www.github.com
+140.82.113.5 api.github.com
+199.232.68.133 avatars0.githubusercontent.com
+199.232.68.133 avatars1.githubusercontent.com
+199.232.68.133 avatars2.githubusercontent.com
+199.232.68.133 avatars3.githubusercontent.com
+199.232.68.133 avatars4.githubusercontent.com
+199.232.68.133 avatars5.githubusercontent.com
+199.232.68.133 avatars6.githubusercontent.com
+199.232.68.133 avatars7.githubusercontent.com
+199.232.68.133 avatars8.githubusercontent.com
+199.232.68.133 camo.githubusercontent.com
+199.232.68.133 cloud.githubusercontent.com
+199.232.68.133 gist.githubusercontent.com
+199.232.68.133 marketplace-screenshots.githubusercontent.com
+199.232.68.133 raw.githubusercontent.com
+199.232.68.133 repository-images.githubusercontent.com
+199.232.68.133 user-images.githubusercontent.com</code></pre>
+<h3 id="Then"><a href="#Then" class="headerlink" title="Then"></a>Then</h3><p>打开<code>hosts</code>文件,在文件末尾处添加上述内容</p>
+<ul>
+<li><p>Mac/linux 上在<code>/etc/hosts</code></p>
+</li>
+<li><p>Windows 上在<code>C:\Windows\System32\drivers\etc</code></p>
+<p>  注意:一定要管理员权限!!!!!!!</p>
+</li>
+</ul>
+<h3 id="Finally"><a href="#Finally" class="headerlink" title="Finally"></a>Finally</h3><p>直接重启一波;然后就OK了</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
@@ -402,7 +252,7 @@ compilation terminated.</code></pre>
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>Contents</h4>
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Ec-%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">关于c++编译环境配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#windows%E9%83%A8%E5%88%86"><span class="toc-number">2.0.1.</span> <span class="toc-text">windows部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mac%E9%83%A8%E5%88%86"><span class="toc-number">2.0.2.</span> <span class="toc-text">mac部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#linux%E9%83%A8%E5%88%86"><span class="toc-number">2.0.3.</span> <span class="toc-text">linux部分</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Start"><span class="toc-number">1.0.1.</span> <span class="toc-text">Start</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Then"><span class="toc-number">1.0.2.</span> <span class="toc-text">Then</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Finally"><span class="toc-number">1.0.3.</span> <span class="toc-text">Finally</span></a></li></ol></li></ol></li></ol>
                 </div>
             </div>
             
