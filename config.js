@@ -68,6 +68,10 @@ var DATA = {
 	}
 };
 
+var SPEC_POS = {
+	"univ_C" : [121.597479, 31.185356]
+};
+
 var MAP_TITLE = "2025届301班毕业蹭饭图";
 
 var ABOUT = {
